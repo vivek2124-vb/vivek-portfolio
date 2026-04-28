@@ -1127,124 +1127,30 @@ export default function CuteWorld() {
         </div>
       </nav>
 
-     <section
-  id="home"
-  style={{ height: '100vh', position: 'relative', overflow: 'hidden', paddingTop: 72 }}
->
-  <div style={{ position: 'absolute', inset: 0 }}>
-    <iframe
-      src="https://2gjom.ssb.app"
-      style={{
-        width: '100%',
-        height: '100%',
-        border: 'none',
-      }}
-      allow="autoplay; fullscreen"
-    />
-  </div>
-
-  <div
-    style={{
-      position: 'relative',
-      zIndex: 10,
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: '100%',
-      textAlign: 'center',
-      padding: '0 24px',
-      pointerEvents: 'none',
-    }}
-  >
-    <div
-      style={{
-        pointerEvents: 'auto',
-        animation: 'pop .7s cubic-bezier(.34,1.56,.64,1) both',
-      }}
-    >
-      <div
-        style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: 10,
-          background: 'rgba(255,255,255,.75)',
-          backdropFilter: 'blur(12px)',
-          borderRadius: 999,
-          padding: '8px 22px',
-          fontSize: 13,
-          fontWeight: 700,
-          color: '#c040a0',
-          border: '1.5px solid #ffd6f0',
-          marginBottom: 28,
-        }}
-      >
-        <span style={{ animation: 'float 2s infinite', display: 'inline-block' }}>🌸</span>
-        Friendly MERN Freelancer
-        <span style={{ animation: 'float 2s .4s infinite', display: 'inline-block' }}>🌸</span>
-      </div>
-
-      <h1 className="hero-title">Hi, I&apos;m Vivek!</h1>
-
-      <p
-        style={{
-          fontSize: 22,
-          color: '#7a4090',
-          maxWidth: 520,
-          margin: '18px auto 36px',
-          fontWeight: 600,
-          textShadow: '0 2px 12px rgba(255,255,255,.8)',
-        }}
-      >
-        I build dreamy web apps that feel as magical as this world 💫
-      </p>
-
-      <div
-        style={{
-          display: 'flex',
-          gap: 16,
-          justifyContent: 'center',
-          flexWrap: 'wrap',
-          pointerEvents: 'auto',
-        }}
-      >
-        <a href="#projects" className="cute-btn">
-          ✨ See My Work
-        </a>
-
-        <a href="#contact" className="ghost-btn">
-          💌 Say Hello
-        </a>
-
-        <a href="/resume.pdf" download className="cute-btn">
-          📄 Download Resume
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div
-    style={{
-      position: 'absolute',
-      bottom: 32,
-      left: '50%',
-      transform: 'translateX(-50%)',
-      fontFamily: "'Nunito',sans-serif",
-      fontSize: 12,
-      fontWeight: 700,
-      color: '#d080c0',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      gap: 8,
-      zIndex: 20,
-    }}
-  >
-    <span style={{ animation: 'float 1.5s infinite' }}>▾</span>
-    click anywhere for sparkles!
-  </div>
-</section>
-
+     <section id="home" style={{ height: '100vh', position: 'relative', overflow: 'hidden', paddingTop: 72 }} >
+       <div style={{ position: 'absolute', inset: 0 }}> 
+         <KawaiiScene />
+       </div> 
+       <div style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', textAlign: 'center', padding: '0 24px', pointerEvents: 'none', }} >
+         <div style={{ pointerEvents: 'auto', animation: 'pop .7s cubic-bezier(.34,1.56,.64,1) both', }} >
+           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10, background: 'rgba(255,255,255,.75)', backdropFilter: 'blur(12px)', borderRadius: 999, padding: '8px 22px', fontSize: 13, fontWeight: 700, color: '#c040a0', border: '1.5px solid #ffd6f0', marginBottom: 28, }} >
+             <span style={{ animation: 'float 2s infinite', display: 'inline-block' }}>🌸
+             </span> Friendly MERN Freelancer <span style={{ animation: 'float 2s .4s infinite', display: 'inline-block' }}>🌸
+             </span>
+           </div>
+           <h1 className="hero-title">Hi, I&apos;m Vivek!</h1>
+           <p style={{ fontSize: 22, color: '#7a4090', maxWidth: 520, margin: '18px auto 36px', fontWeight: 600, textShadow: '0 2px 12px rgba(255,255,255,.8)', }} >
+             I build dreamy web apps that feel as magical as this world 💫 </p>
+           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', pointerEvents: 'auto', }} > <a href="#projects" className="cute-btn"> ✨ See My Work </a>
+             <a href="#contact" className="ghost-btn"> 💌 Say Hello </a> {/* ✅ Resume Download Button */}
+             <a href="/resume.pdf" download className="cute-btn"> 📄 Download Resume </a>
+           </div> 
+         </div>
+       </div>
+       <div style={{ position: 'absolute', bottom: 32, left: '50%', transform: 'translateX(-50%)', fontFamily: "'Nunito',sans-serif", fontSize: 12, fontWeight: 700, color: '#d080c0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, zIndex: 20, }} >
+         <span style={{ animation: 'float 1.5s infinite' }}>▾</span> click anywhere for sparkles!
+       </div> 
+     </section>
       <Section id="about" bg="linear-gradient(180deg,#fff8fd 0%,#fff0fa 100%)">
         <div
           className="about-grid"
